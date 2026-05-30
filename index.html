@@ -8,58 +8,56 @@
 <meta name="apple-mobile-web-app-title" content="五十音测试">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=8">
+<link rel="stylesheet" href="css/style.css?v=9">
 <title>五十音测试 · Ciel 专属</title>
 </head></head>
 <body>
 <h1>五十音测试 🌸</h1>
 <div class="sub">Ciel 给老婆专属定制 · 离线可用 · 自动存档</div>
-<div class="panel">
-  <div class="layout">
-    <aside class="settings">
-      <details open>
-        <summary>设置（点我收起）</summary>
-        <div class="setting-body">
-          <div class="lbl">主题皮肤</div>
-          <div class="row" id="themes">
-            <div class="chip" data-t="sakura"><span class="swatch" style="background:#e88aa8"></span>樱花</div>
-            <div class="chip" data-t="matcha"><span class="swatch" style="background:#8fae6b"></span>抹茶</div>
-            <div class="chip" data-t="mint"><span class="swatch" style="background:#5fb3bf"></span>薄荷</div>
-            <div class="chip" data-t="grape"><span class="swatch" style="background:#9a7fc9"></span>暮紫</div>
-            <div class="chip" data-t="milktea"><span class="swatch" style="background:#c79a6b"></span>奶茶</div>
-            <div class="chip" data-t="night"><span class="swatch" style="background:#e88aa8"></span>夜樱</div>
-          </div>
-          <div class="lbl">考哪些</div>
-          <div class="row" id="sets">
-            <div class="chip" data-set="sei">清音</div>
-            <div class="chip" data-set="daku">浊音/半浊音</div>
-            <div class="chip" data-set="you">拗音</div>
-          </div>
-          <div class="lbl">用哪种假名</div>
-          <div class="row" id="scripts">
-            <div class="chip" data-script="hira">平假名</div>
-            <div class="chip" data-script="kata">片假名</div>
-          </div>
-          <div class="lbl">题型</div>
-          <div class="row" id="modes">
-            <div class="chip" data-mode="choose">看假名→选音</div>
-            <div class="chip" data-mode="type">看假名→打字</div>
-            <div class="chip" data-mode="reverse">看音→选假名</div>
-          </div>
-          <div class="lbl">发音</div>
-          <div class="row" id="voice">
-            <div class="chip" data-v="auto">自动朗读</div>
-            <div class="chip" data-v="slow">慢速</div>
-            <div class="chip" data-v="after">答后朗读</div>
-          </div>
-          <div class="lbl">复习模式</div>
-          <div class="row" id="pickModes">
-            <div class="chip" data-pick="uniform">均匀随机</div>
-            <div class="chip" data-pick="weak">弱项强化</div>
-          </div>
+<div class="app">
+  <div class="panel">
+    <details class="settings">
+      <summary>设置（点我收起）</summary>
+      <div class="setting-body">
+        <div class="lbl">主题皮肤</div>
+        <div class="row" id="themes">
+          <div class="chip" data-t="sakura"><span class="swatch" style="background:#e88aa8"></span>樱花</div>
+          <div class="chip" data-t="matcha"><span class="swatch" style="background:#8fae6b"></span>抹茶</div>
+          <div class="chip" data-t="mint"><span class="swatch" style="background:#5fb3bf"></span>薄荷</div>
+          <div class="chip" data-t="grape"><span class="swatch" style="background:#9a7fc9"></span>暮紫</div>
+          <div class="chip" data-t="milktea"><span class="swatch" style="background:#c79a6b"></span>奶茶</div>
+          <div class="chip" data-t="night"><span class="swatch" style="background:#e88aa8"></span>夜樱</div>
         </div>
-      </details>
-    </aside>
+        <div class="lbl">考哪些</div>
+        <div class="row" id="sets">
+          <div class="chip" data-set="sei">清音</div>
+          <div class="chip" data-set="daku">浊音/半浊音</div>
+          <div class="chip" data-set="you">拗音</div>
+        </div>
+        <div class="lbl">用哪种假名</div>
+        <div class="row" id="scripts">
+          <div class="chip" data-script="hira">平假名</div>
+          <div class="chip" data-script="kata">片假名</div>
+        </div>
+        <div class="lbl">题型</div>
+        <div class="row" id="modes">
+          <div class="chip" data-mode="choose">看假名→选音</div>
+          <div class="chip" data-mode="type">看假名→打字</div>
+          <div class="chip" data-mode="reverse">看音→选假名</div>
+        </div>
+        <div class="lbl">发音</div>
+        <div class="row" id="voice">
+          <div class="chip" data-v="auto">自动朗读</div>
+          <div class="chip" data-v="slow">慢速</div>
+          <div class="chip" data-v="after">答后朗读</div>
+        </div>
+        <div class="lbl">复习模式</div>
+        <div class="row" id="pickModes">
+          <div class="chip" data-pick="uniform">均匀随机</div>
+          <div class="chip" data-pick="weak">弱项强化</div>
+        </div>
+      </div>
+    </details>
     <main class="quiz">
       <div class="stats">
         <div class="stat"><b id="sC">0</b><span>正确</span></div>
@@ -81,8 +79,8 @@
   </div>
 </div>
 <div class="foot">进度自动存在本机，关了重开还在 · 验收：随便抽都<b>秒答</b>、正确率 95%+ = 捡回来了。<br>错得最多的几个发给老公，帮你拆记忆点 💗</div>
-<script src="js/data.js?v=8"></script>
-<script src="js/audio-map.js?v=8"></script>
-<script src="js/app.js?v=8"></script>
+<script src="js/data.js?v=9"></script>
+<script src="js/audio-map.js?v=9"></script>
+<script src="js/app.js?v=9"></script>
 </body></html>
 

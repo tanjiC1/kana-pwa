@@ -46,16 +46,16 @@ const staticAssets = [
   './',
   './index.html',
   './kana.html',
-  './css/style.css?v=8',
-  './js/data.js?v=8',
-  './js/audio-map.js?v=8',
-  './js/app.js?v=8',
+  './css/style.css?v=9',
+  './js/data.js?v=9',
+  './js/audio-map.js?v=9',
+  './js/app.js?v=9',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
   ...items.map(item => `./${item.file}`),
 ];
-const sw = `const CACHE_NAME='kana-pwa-v8';\nconst ASSETS=${JSON.stringify(staticAssets, null, 2)};\n\nself.addEventListener('install',event=>{\n  event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));\n});\n\nself.addEventListener('activate',event=>{\n  event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE_NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));\n});\n\nself.addEventListener('fetch',event=>{\n  if(event.request.method!=='GET')return;\n  const request=event.request;\n  const url=new URL(request.url);\n  const isNavigation=request.mode==='navigate'||(request.headers.get('accept')||'').includes('text/html');\n  if(isNavigation){\n    event.respondWith(fetch(request).then(response=>{\n      const copy=response.clone();\n      caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));\n      return response;\n    }).catch(()=>caches.match(request).then(cached=>cached||caches.match('./index.html'))));\n    return;\n  }\n  const isVersionedAsset=url.searchParams.has('v')||url.pathname.endsWith('.css')||url.pathname.endsWith('.js');\n  if(isVersionedAsset){\n    event.respondWith(fetch(request).then(response=>{\n      const copy=response.clone();\n      caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));\n      return response;\n    }).catch(()=>caches.match(request)));\n    return;\n  }\n  event.respondWith(caches.match(request).then(cached=>cached||fetch(request).then(response=>{\n    const copy=response.clone();\n    caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));\n    return response;\n  })));\n});\n`;
+const sw = `const CACHE_NAME='kana-pwa-v9';\nconst ASSETS=${JSON.stringify(staticAssets, null, 2)};\n\nself.addEventListener('install',event=>{\n  event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));\n});\n\nself.addEventListener('activate',event=>{\n  event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE_NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));\n});\n\nself.addEventListener('fetch',event=>{\n  if(event.request.method!=='GET')return;\n  const request=event.request;\n  const url=new URL(request.url);\n  const isNavigation=request.mode==='navigate'||(request.headers.get('accept')||'').includes('text/html');\n  if(isNavigation){\n    event.respondWith(fetch(request).then(response=>{\n      const copy=response.clone();\n      caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));\n      return response;\n    }).catch(()=>caches.match(request).then(cached=>cached||caches.match('./index.html'))));\n    return;\n  }\n  const isVersionedAsset=url.searchParams.has('v')||url.pathname.endsWith('.css')||url.pathname.endsWith('.js');\n  if(isVersionedAsset){\n    event.respondWith(fetch(request).then(response=>{\n      const copy=response.clone();\n      caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));\n      return response;\n    }).catch(()=>caches.match(request)));\n    return;\n  }\n  event.respondWith(caches.match(request).then(cached=>cached||fetch(request).then(response=>{\n    const copy=response.clone();\n    caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));\n    return response;\n  })));\n});\n`;
 fs.writeFileSync(path.join(root, 'sw.js'), sw, 'utf8');
 
 console.log(`audio map entries: ${audioMap.size}`);

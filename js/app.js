@@ -31,16 +31,16 @@ function pick(){const p=allFor();$("praise").textContent="";$("praise").classNam
   $("next").style.display="none";$("card").classList.remove("pop","glow");cur=pickOne(p);locked=false;render();if(autoSpeak)speak(cur[0]);}
 function render(){const p=allFor();$("fb").textContent="";$("fb").className="fb";$("ex").innerHTML="";
   if(mode==="reverse"){$("kind").textContent="看音选假名";$("q").style.fontSize="58px";$("q").textContent=cur[1];
-    const opts=shuffle([cur,...sample(p,cur,3)]);$("area").innerHTML="<div class=opts>"+opts.map(o=>`<div class=opt data-k="${o[0]}">${o[0]}</div>`).join("")+"</div>";
+    const opts=shuffle([cur,...sample(p,cur,3)]);$("area").innerHTML="<div class=options>"+opts.map(o=>`<button class=opt type=button data-k="${o[0]}">${o[0]}</button>`).join("")+"</div>";
     [...document.querySelectorAll(".opt")].forEach(el=>el.onclick=()=>{if(locked)return;judge(el.dataset.k===cur[0],el,"k");});}
   else if(mode==="choose"){$("kind").textContent="看假名选音";$("q").style.fontSize="90px";$("q").textContent=cur[0];
-    const opts=shuffle([cur,...sample(p,cur,3)]);$("area").innerHTML="<div class=opts>"+opts.map(o=>`<div class=opt data-r="${o[1]}">${o[1]}</div>`).join("")+"</div>";
+    const opts=shuffle([cur,...sample(p,cur,3)]);$("area").innerHTML="<div class=options>"+opts.map(o=>`<button class=opt type=button data-r="${o[1]}">${o[1]}</button>`).join("")+"</div>";
     [...document.querySelectorAll(".opt")].forEach(el=>el.onclick=()=>{if(locked)return;judge(el.dataset.r===cur[1],el,"r");});}
   else{$("kind").textContent="看假名打字";$("q").style.fontSize="90px";$("q").textContent=cur[0];
     $("area").innerHTML=`<input class=ans id=inp autocomplete=off autocapitalize=off placeholder="打罗马音 回车确认"><button class=btn id=go>确认</button>`;
     const inp=$("inp");inp.focus();const submit=()=>{if(locked)return;judge(accept(cur[1],inp.value),null,"t");};
     $("go").onclick=submit;inp.onkeydown=e=>{if(e.key==="Enter")submit();};}}
-function judge(ok,el,kind){locked=true;const card=$("card");
+function judge(ok,el,kind){if(el&&el.blur)el.blur();locked=true;const card=$("card");
   if(ok){C++;streak++;setLvl(cur[0],getLvl(cur[0])+1);if(streak>best)best=streak;$("fb").textContent="✓ 对啦";$("fb").className="fb good";if(el)el.classList.add("good");
     const pr=$("praise");pr.textContent=getPraise(streak)+(streak>=3?"  🔥×"+streak:"");pr.className="praise show";void pr.offsetWidth;pr.className="praise show";
     card.classList.add("pop","glow");burst(Math.min(8+streak*2,26));}

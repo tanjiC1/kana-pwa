@@ -1,12 +1,12 @@
-const CACHE_NAME='kana-pwa-v8';
+const CACHE_NAME='kana-pwa-v9';
 const ASSETS=[
   "./",
   "./index.html",
   "./kana.html",
-  "./css/style.css?v=8",
-  "./js/data.js?v=8",
-  "./js/audio-map.js?v=8",
-  "./js/app.js?v=8",
+  "./css/style.css?v=9",
+  "./js/data.js?v=9",
+  "./js/audio-map.js?v=9",
+  "./js/app.js?v=9",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
