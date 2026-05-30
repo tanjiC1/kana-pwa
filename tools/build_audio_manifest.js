@@ -28,13 +28,19 @@ function add(text, romaji) {
   audioMap.set(text, file);
 }
 
+function addAudioFileOnly(text, romaji) {
+  if (!text || !romaji) return;
+  const file = `audio/${safeName(romaji)}.mp3`;
+  if (!itemsByFile.has(file)) itemsByFile.set(file, { text, romaji, file });
+}
+
 for (const table of [HIRA, KATA]) {
   for (const group of ['sei', 'daku', 'you']) {
     for (const [kana, romaji] of table[group]) add(kana, romaji);
   }
 }
 for (const [kana, example] of Object.entries(EX)) {
-  add(kana, example[1]);
+  addAudioFileOnly(kana, example[1]);
   add(example[0], example[1]);
 }
 
@@ -56,8 +62,9 @@ const staticAssets = [
   './icons/icon-512.png',
   ...items.map(item => `./${item.file}`),
 ];
-const sw = `const CACHE_NAME='kana-pwa-v1';\nconst ASSETS=${JSON.stringify(staticAssets, null, 2)};\n\nself.addEventListener('install',event=>{\n  event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));\n});\n\nself.addEventListener('activate',event=>{\n  event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE_NAME).map(key=>caches.delete(key)))) .then(()=>self.clients.claim()));\n});\n\nself.addEventListener('fetch',event=>{\n  if(event.request.method!=='GET')return;\n  event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request).then(response=>{\n    const copy=response.clone();\n    caches.open(CACHE_NAME).then(cache=>cache.put(event.request,copy));\n    return response;\n  }).catch(()=>caches.match('./index.html'))));\n});\n`;
+const sw = `const CACHE_NAME='kana-pwa-v2';\nconst ASSETS=${JSON.stringify(staticAssets, null, 2)};\n\nself.addEventListener('install',event=>{\n  event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));\n});\n\nself.addEventListener('activate',event=>{\n  event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE_NAME).map(key=>caches.delete(key)))) .then(()=>self.clients.claim()));\n});\n\nself.addEventListener('fetch',event=>{\n  if(event.request.method!=='GET')return;\n  event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request).then(response=>{\n    const copy=response.clone();\n    caches.open(CACHE_NAME).then(cache=>cache.put(event.request,copy));\n    return response;\n  }).catch(()=>caches.match('./index.html'))));\n});\n`;
 fs.writeFileSync(path.join(root, 'sw.js'), sw, 'utf8');
 
 console.log(`audio map entries: ${audioMap.size}`);
 console.log(`audio files to generate: ${items.length}`);
+

@@ -1,4 +1,4 @@
-const CACHE_NAME='kana-pwa-v1';
+const CACHE_NAME='kana-pwa-v2';
 const ASSETS=[
   "./",
   "./index.html",
