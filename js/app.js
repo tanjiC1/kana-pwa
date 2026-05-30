@@ -70,5 +70,5 @@ document.querySelectorAll("#voice .chip").forEach(c=>c.onclick=()=>{if(c.dataset
 $("reset").onclick=()=>{if(confirm("清空正确/错误/最常错/掌握度记录？（最高连击与设置保留）")){C=W=streak=0;miss={};lvl={};upd();save();}};
 $("next").onclick=()=>pick();
 document.addEventListener("keydown",e=>{if(e.target&&e.target.id==="inp")return;if((e.key==="Enter"||e.key===" ")&&$("next").style.display==="block"){e.preventDefault();pick();}});
-if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').catch(()=>{});});}
+if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').then(reg=>reg.update()).catch(()=>{});});}
 load();applyTheme();syncUI();pick();upd();
