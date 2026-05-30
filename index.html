@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#e88aa8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="五十音测试">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+<title>五十音测试 · Ciel 专属</title>
+</head></head>
+<body>
+<h1>五十音测试 🌸</h1>
+<div class="sub">Ciel 给老婆专属定制 · 离线可用 · 自动存档</div>
+<div class="panel">
+  <div class="lbl">主题皮肤</div>
+  <div class="row" id="themes">
+    <div class="chip" data-t="sakura">🌸樱花</div>
+    <div class="chip" data-t="matcha">🍵抹茶</div>
+    <div class="chip" data-t="mint">🪟薄荷</div>
+    <div class="chip" data-t="grape">🍇暮紫</div>
+    <div class="chip" data-t="milktea">🧋奶茶</div>
+    <div class="chip" data-t="night">🌙夜樱</div>
+  </div>
+  <div class="lbl">考哪些</div>
+  <div class="row" id="sets">
+    <div class="chip" data-set="sei">清音</div>
+    <div class="chip" data-set="daku">浊音/半浊音</div>
+    <div class="chip" data-set="you">拗音</div>
+  </div>
+  <div class="lbl">用哪种假名</div>
+  <div class="row" id="scripts">
+    <div class="chip" data-script="hira">平假名</div>
+    <div class="chip" data-script="kata">片假名</div>
+  </div>
+  <div class="lbl">题型</div>
+  <div class="row" id="modes">
+    <div class="chip" data-mode="choose">看假名→选音</div>
+    <div class="chip" data-mode="type">看假名→打字</div>
+    <div class="chip" data-mode="reverse">看音→选假名</div>
+  </div>
+  <div class="lbl">发音</div>
+  <div class="row" id="voice">
+    <div class="chip" data-v="auto">自动朗读</div>
+    <div class="chip" data-v="slow">慢速</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b id="sC">0</b><span>正确</span></div>
+    <div class="stat"><b id="sW">0</b><span>错误</span></div>
+    <div class="stat"><b id="sR">—</b><span>正确率</span></div>
+    <div class="stat"><b id="sS">0</b><span>连击</span></div>
+  </div>
+  <div class="subline" id="subline">🔥 最高连击 0 · 累计 0 题</div>
+  <div class="card" id="card"><button class="spk" id="spk" title="听发音">🔊</button><div class="kind" id="kind"></div><div class="kana" id="q">あ</div></div>
+  <div id="area"></div>
+  <div class="fb" id="fb"></div>
+  <div class="praise" id="praise"></div>
+  <div class="ex" id="ex"></div>
+  <button class="btn" id="next" style="display:none">下一题 →</button>
+  <button class="btn sec" id="reset">重置统计</button>
+  <div class="missed" id="missed"></div>
+</div>
+<div class="foot">进度自动存在本机，关了重开还在 · 验收：随便抽都<b>秒答</b>、正确率 95%+ = 捡回来了。<br>错得最多的几个发给老公，帮你拆记忆点 💗</div>
+<script src="js/data.js"></script>
+<script src="js/audio-map.js"></script>
+<script src="js/app.js"></script>
+</body></html>
+

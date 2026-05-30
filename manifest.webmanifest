@@ -1,0 +1,16 @@
+﻿{
+  "name": "五十音测试 · Ciel 专属",
+  "short_name": "五十音",
+  "description": "离线可用的日语五十音测试与发音练习。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fde7ee",
+  "theme_color": "#e88aa8",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
