@@ -13,6 +13,7 @@ if('speechSynthesis' in window){loadVoices();speechSynthesis.onvoiceschanged=loa
 let currentAudio=null;
 function fallbackSpeak(t){if(!('speechSynthesis' in window))return false;try{speechSynthesis.resume();speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='ja-JP';if(jaVoice)u.voice=jaVoice;u.rate=slow?0.55:0.85;speechSynthesis.speak(u);}catch(e){return false;}return true;}
 function speak(t){const src=AUDIO&&AUDIO[t];if(src){try{if(currentAudio){currentAudio.pause();currentAudio.currentTime=0;}const audio=new Audio(src);currentAudio=audio;audio.playbackRate=slow?0.82:1;const p=audio.play();if(p&&p.catch)p.catch(()=>fallbackSpeak(t));return true;}catch(e){return fallbackSpeak(t);}}return fallbackSpeak(t);}
+function speakExample(){if(!cur)return false;const e=EX[cur[0]];return e?speak(e[0]):false;}
 function applyTheme(){const t=THEMES[theme]||THEMES.sakura;for(const k in t){if(k!=='petal')root.style.setProperty('--'+k,t[k]);}makePetals(t.petal);}
 let petalTimer=null;
 function makePetals(ch){document.querySelectorAll('.petal').forEach(p=>p.remove());for(let i=0;i<14;i++){const s=document.createElement('span');s.className='petal';s.textContent=ch;s.style.left=Math.random()*100+'vw';s.style.fontSize=(13+Math.random()*16)+'px';s.style.animationDuration=(8+Math.random()*9)+'s';s.style.animationDelay=(-Math.random()*12)+'s';s.style.opacity=(0.25+Math.random()*0.35);document.body.appendChild(s);}}
@@ -43,8 +44,8 @@ function judge(ok,el,kind){locked=true;const card=$("card");
     $("fb").textContent="✗ 正解："+(mode==="reverse"?cur[0]:cur[1]);$("fb").className="fb bad";
     const pr=$("praise");pr.textContent=rand(COMFORT);pr.className="praise show";
     if(el){el.classList.add("bad");document.querySelectorAll(".opt").forEach(o=>{if((kind==="k"&&o.dataset.k===cur[0])||(kind==="r"&&o.dataset.r===cur[1]))o.classList.add("good");});}}
-  {const _e=EX[cur[0]];$("ex").innerHTML=_e?'例：<b>'+_e[0]+'</b> '+_e[1]+'　'+_e[2]:'';}
-  upd();save();$("next").style.display="block";}
+  {const _e=EX[cur[0]];$("ex").innerHTML=_e?'例：<button class="ex-sound" type="button" title="听例词" aria-label="听例词">🔊</button><b>'+_e[0]+'</b> '+_e[1]+'　'+_e[2]:'';}
+  upd();save();$("next").style.display="block";if(autoSpeak)speakExample();}
 function upd(){$("sC").textContent=C;$("sW").textContent=W;$("sS").textContent=streak;const tot=C+W;$("sR").textContent=tot?Math.round(C/tot*100)+"%":"—";$("subline").textContent="🔥 最高连击 "+best+" · 累计 "+tot+" 题";
   const arr=Object.entries(miss).sort((a,b)=>b[1]-a[1]).slice(0,12);$("missed").innerHTML=arr.length?"最常错："+arr.map(([k,v])=>`<span class=miss-tag>${k.split(" ")[0]} ×${v}</span>`).join(""):"";}
 function syncUI(){document.querySelectorAll("#themes .chip").forEach(c=>c.classList.toggle("on",c.dataset.t===theme));
@@ -58,7 +59,7 @@ document.querySelectorAll("#sets .chip").forEach(c=>c.onclick=()=>{sets[c.datase
 document.querySelectorAll("#scripts .chip").forEach(c=>c.onclick=()=>{scripts[c.dataset.script]=!scripts[c.dataset.script];if(!Object.values(scripts).some(Boolean))scripts[c.dataset.script]=true;syncUI();save();pick();});
 document.querySelectorAll("#modes .chip").forEach(c=>c.onclick=()=>{mode=c.dataset.mode;syncUI();save();pick();});
 $("spk").onclick=()=>{loadVoices();const ok=cur&&speak(cur[0]);if(ok===false){$("fb").textContent="此浏览器不支持发音，请改用 Chrome 打开";$("fb").className="fb bad";}};
-$("ex").onclick=()=>{if(cur){const e=EX[cur[0]];if(e)speak(e[0]);}};
+$("ex").onclick=e=>{if(e.target&&e.target.closest(".ex-sound,b"))speakExample();};
 document.querySelectorAll("#voice .chip").forEach(c=>c.onclick=()=>{if(c.dataset.v==="auto")autoSpeak=!autoSpeak;else slow=!slow;syncUI();save();});
 $("reset").onclick=()=>{if(confirm("清空正确/错误/最常错记录？（最高连击与设置保留）")){C=W=streak=0;miss={};upd();save();}};
 $("next").onclick=()=>pick();

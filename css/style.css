@@ -33,6 +33,7 @@ input.ans:focus{border-color:var(--accent)}
 @keyframes pin{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
 .ex{min-height:18px;text-align:center;font-size:13px;color:var(--muted);margin:0 0 8px;cursor:pointer}
 .ex b{color:var(--ink);font-size:17px;font-family:"Noto Sans JP",sans-serif}
+.ex-sound{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;margin:0 6px 0 2px;padding:3px 7px;font-size:13px;cursor:pointer;vertical-align:2px}
 .btn{display:block;width:100%;border:none;border-radius:12px;padding:13px;font-size:15px;font-weight:600;cursor:pointer;background:var(--accent);color:#fff;margin-top:4px;font-family:inherit}
 .btn.sec{background:var(--chip);color:var(--ink);border:1px solid var(--line)}
 .missed{margin-top:14px;font-size:12px;color:var(--muted)}
