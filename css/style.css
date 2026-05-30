@@ -33,8 +33,8 @@ input.ans:focus{border-color:var(--accent)}
 .options button{min-height:64px}
 .options button.opt{font:inherit;color:inherit;width:100%;text-align:center;cursor:pointer;appearance:none;-webkit-appearance:none}
 .opt:active{transform:scale(.97)}
-.opt.good{background:var(--good);color:#fff;border-color:var(--good)}
-.opt.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
+.opt.good,.options button.opt.good{background:var(--good);color:#fff;border-color:var(--good)}
+.opt.bad,.options button.opt.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
 .fb{min-height:20px;text-align:center;font-size:14px;font-weight:600;margin:2px 0}
 .fb.good{color:var(--good)}.fb.bad{color:var(--bad)}
 .praise{min-height:24px;text-align:center;font-size:15px;font-weight:700;margin:2px 0 8px;color:var(--accent)}
