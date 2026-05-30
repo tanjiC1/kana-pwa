@@ -1,12 +1,12 @@
-const CACHE_NAME='kana-pwa-v7';
+const CACHE_NAME='kana-pwa-v8';
 const ASSETS=[
   "./",
   "./index.html",
   "./kana.html",
-  "./css/style.css",
-  "./js/data.js",
-  "./js/audio-map.js",
-  "./js/app.js",
+  "./css/style.css?v=8",
+  "./js/data.js?v=8",
+  "./js/audio-map.js?v=8",
+  "./js/app.js?v=8",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
@@ -320,6 +320,7 @@ self.addEventListener('activate',event=>{
 self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
   const request=event.request;
+  const url=new URL(request.url);
   const isNavigation=request.mode==='navigate'||(request.headers.get('accept')||'').includes('text/html');
   if(isNavigation){
     event.respondWith(fetch(request).then(response=>{
@@ -327,6 +328,15 @@ self.addEventListener('fetch',event=>{
       caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));
       return response;
     }).catch(()=>caches.match(request).then(cached=>cached||caches.match('./index.html'))));
+    return;
+  }
+  const isVersionedAsset=url.searchParams.has('v')||url.pathname.endsWith('.css')||url.pathname.endsWith('.js');
+  if(isVersionedAsset){
+    event.respondWith(fetch(request).then(response=>{
+      const copy=response.clone();
+      caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));
+      return response;
+    }).catch(()=>caches.match(request)));
     return;
   }
   event.respondWith(caches.match(request).then(cached=>cached||fetch(request).then(response=>{
