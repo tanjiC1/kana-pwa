@@ -10,7 +10,7 @@ const ALT={shi:["si"],chi:["ti"],tsu:["tu"],fu:["hu"],ji:["zi","di"],zu:["du"],s
 const THEMES={
 sakura:{bg1:"#fde7ee",bg2:"#f7d6e0",panel:"#fffdfb",card:"#fff5f8",chip:"#ffffff",ink:"#5a4750",muted:"#b58a96",line:"#f3dbe3",accent:"#e88aa8",good:"#7bbf9e",bad:"#e2899b",petal:"🌸"},
 matcha:{bg1:"#eaf0e0",bg2:"#d7e4c5",panel:"#fffefb",card:"#f4f8ec",chip:"#ffffff",ink:"#4c5340",muted:"#8a957a",line:"#dde7cf",accent:"#8fae6b",good:"#6faa86",bad:"#cf9a8a",petal:"🍃"},
-mint:{bg1:"#e2f0f1",bg2:"#cfe6e9",panel:"#fdffff",card:"#eef9fa",chip:"#ffffff",ink:"#3f4f54",muted:"#84979c",line:"#d4e7e9",accent:"#5fb3bf",good:"#5fb38f",bad:"#df8f9c",petal:"🫧"},
+mint:{bg1:"#e2f0f1",bg2:"#cfe6e9",panel:"#fdffff",card:"#eef9fa",chip:"#ffffff",ink:"#3f4f54",muted:"#84979c",line:"#d4e7e9",accent:"#5fb3bf",good:"#5fb38f",bad:"#df8f9c",petal:"•"},
 grape:{bg1:"#ece6f5",bg2:"#ddd2ee",panel:"#fffdff",card:"#f5f0fb",chip:"#ffffff",ink:"#4e4560",muted:"#9389a8",line:"#e3dcf0",accent:"#9a7fc9",good:"#6faa9a",bad:"#cf8aac",petal:"✨"},
 milktea:{bg1:"#f3e9dd",bg2:"#e7d6c2",panel:"#fffdf9",card:"#f8efe3",chip:"#ffffff",ink:"#5b4d3f",muted:"#a8957f",line:"#ecdfce",accent:"#c79a6b",good:"#9aaa7f",bad:"#cf9a8a",petal:"🐾"},
 night:{bg1:"#2a2433",bg2:"#1c1826",panel:"#352e42",card:"#3d3550",chip:"#3a3247",ink:"#efe9f6",muted:"#a99dba",line:"#4a4059",accent:"#e88aa8",good:"#7fc6a4",bad:"#e2899b",petal:"🌸"}};
