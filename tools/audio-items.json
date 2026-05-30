@@ -5,12 +5,12 @@
     "file": "audio/a.mp3"
   },
   {
-    "text": "ア",
+    "text": "アイス",
     "romaji": "aisu",
     "file": "audio/aisu.mp3"
   },
   {
-    "text": "あ",
+    "text": "あめ",
     "romaji": "ame",
     "file": "audio/ame.mp3"
   },
@@ -20,12 +20,12 @@
     "file": "audio/ba.mp3"
   },
   {
-    "text": "ば",
+    "text": "ばんごう",
     "romaji": "bangou",
     "file": "audio/bangou.mp3"
   },
   {
-    "text": "バ",
+    "text": "バス",
     "romaji": "basu",
     "file": "audio/basu.mp3"
   },
@@ -35,12 +35,12 @@
     "file": "audio/be.mp3"
   },
   {
-    "text": "ベ",
+    "text": "ベッド",
     "romaji": "beddo",
     "file": "audio/beddo.mp3"
   },
   {
-    "text": "べ",
+    "text": "べんきょう",
     "romaji": "benkyou",
     "file": "audio/benkyou.mp3"
   },
@@ -50,7 +50,7 @@
     "file": "audio/bi.mp3"
   },
   {
-    "text": "ビ",
+    "text": "ビール",
     "romaji": "biiru",
     "file": "audio/biiru.mp3"
   },
@@ -60,12 +60,12 @@
     "file": "audio/bo.mp3"
   },
   {
-    "text": "ボ",
+    "text": "ボタン",
     "romaji": "botan",
     "file": "audio/botan.mp3"
   },
   {
-    "text": "ぼ",
+    "text": "ぼうし",
     "romaji": "boushi",
     "file": "audio/boushi.mp3"
   },
@@ -75,12 +75,12 @@
     "file": "audio/bu.mp3"
   },
   {
-    "text": "ブ",
+    "text": "ブログ",
     "romaji": "burogu",
     "file": "audio/burogu.mp3"
   },
   {
-    "text": "ぶ",
+    "text": "ぶた",
     "romaji": "buta",
     "file": "audio/buta.mp3"
   },
@@ -90,12 +90,12 @@
     "file": "audio/bya.mp3"
   },
   {
-    "text": "ビャ",
+    "text": "ビャクダン",
     "romaji": "byakudan",
     "file": "audio/byakudan.mp3"
   },
   {
-    "text": "びゃ",
+    "text": "びゃくや",
     "romaji": "byakuya",
     "file": "audio/byakuya.mp3"
   },
@@ -105,12 +105,12 @@
     "file": "audio/byo.mp3"
   },
   {
-    "text": "び",
+    "text": "びょういん",
     "romaji": "byouin",
     "file": "audio/byouin.mp3"
   },
   {
-    "text": "びょ",
+    "text": "びょうき",
     "romaji": "byouki",
     "file": "audio/byouki.mp3"
   },
@@ -120,12 +120,12 @@
     "file": "audio/byu.mp3"
   },
   {
-    "text": "ビュ",
+    "text": "ビュー",
     "romaji": "byuu",
     "file": "audio/byuu.mp3"
   },
   {
-    "text": "びゅ",
+    "text": "びゅうびゅう",
     "romaji": "byuubyu",
     "file": "audio/byuubyu.mp3"
   },
@@ -135,12 +135,12 @@
     "file": "audio/cha.mp3"
   },
   {
-    "text": "ちゃ",
+    "text": "ちゃいろ",
     "romaji": "chairo",
     "file": "audio/chairo.mp3"
   },
   {
-    "text": "チャ",
+    "text": "チャンス",
     "romaji": "chansu",
     "file": "audio/chansu.mp3"
   },
@@ -150,17 +150,17 @@
     "file": "audio/chi.mp3"
   },
   {
-    "text": "チ",
+    "text": "チーズ",
     "romaji": "chiizu",
     "file": "audio/chiizu.mp3"
   },
   {
-    "text": "ぢ",
+    "text": "ちぢむ",
     "romaji": "chijimu",
     "file": "audio/chijimu.mp3"
   },
   {
-    "text": "ち",
+    "text": "ちず",
     "romaji": "chizu",
     "file": "audio/chizu.mp3"
   },
@@ -170,12 +170,12 @@
     "file": "audio/cho.mp3"
   },
   {
-    "text": "ちょ",
+    "text": "ちょきん",
     "romaji": "chokin",
     "file": "audio/chokin.mp3"
   },
   {
-    "text": "チョ",
+    "text": "チョコ",
     "romaji": "choko",
     "file": "audio/choko.mp3"
   },
@@ -185,12 +185,12 @@
     "file": "audio/chu.mp3"
   },
   {
-    "text": "ちゅ",
+    "text": "ちゅうごく",
     "romaji": "chuugoku",
     "file": "audio/chuugoku.mp3"
   },
   {
-    "text": "チュ",
+    "text": "チューリップ",
     "romaji": "chuurippu",
     "file": "audio/chuurippu.mp3"
   },
@@ -200,12 +200,12 @@
     "file": "audio/da.mp3"
   },
   {
-    "text": "だ",
+    "text": "だいがく",
     "romaji": "daigaku",
     "file": "audio/daigaku.mp3"
   },
   {
-    "text": "ダ",
+    "text": "ダンス",
     "romaji": "dansu",
     "file": "audio/dansu.mp3"
   },
@@ -215,12 +215,12 @@
     "file": "audio/de.mp3"
   },
   {
-    "text": "で",
+    "text": "でんわ",
     "romaji": "denwa",
     "file": "audio/denwa.mp3"
   },
   {
-    "text": "デ",
+    "text": "デパート",
     "romaji": "depaato",
     "file": "audio/depaato.mp3"
   },
@@ -230,12 +230,12 @@
     "file": "audio/do.mp3"
   },
   {
-    "text": "ド",
+    "text": "ドア",
     "romaji": "doa",
     "file": "audio/doa.mp3"
   },
   {
-    "text": "ど",
+    "text": "どようび",
     "romaji": "doyoubi",
     "file": "audio/doyoubi.mp3"
   },
@@ -245,17 +245,17 @@
     "file": "audio/e.mp3"
   },
   {
-    "text": "エ",
+    "text": "エアコン",
     "romaji": "eakon",
     "file": "audio/eakon.mp3"
   },
   {
-    "text": "え",
+    "text": "えき",
     "romaji": "eki",
     "file": "audio/eki.mp3"
   },
   {
-    "text": "フ",
+    "text": "フォーク",
     "romaji": "fooku",
     "file": "audio/fooku.mp3"
   },
@@ -265,7 +265,7 @@
     "file": "audio/fu.mp3"
   },
   {
-    "text": "ふ",
+    "text": "ふね",
     "romaji": "fune",
     "file": "audio/fune.mp3"
   },
@@ -275,12 +275,12 @@
     "file": "audio/ga.mp3"
   },
   {
-    "text": "が",
+    "text": "がっこう",
     "romaji": "gakkou",
     "file": "audio/gakkou.mp3"
   },
   {
-    "text": "ガ",
+    "text": "ガラス",
     "romaji": "garasu",
     "file": "audio/garasu.mp3"
   },
@@ -290,12 +290,12 @@
     "file": "audio/ge.mp3"
   },
   {
-    "text": "ゲ",
+    "text": "ゲーム",
     "romaji": "geemu",
     "file": "audio/geemu.mp3"
   },
   {
-    "text": "げ",
+    "text": "げんき",
     "romaji": "genki",
     "file": "audio/genki.mp3"
   },
@@ -305,12 +305,12 @@
     "file": "audio/gi.mp3"
   },
   {
-    "text": "ぎ",
+    "text": "ぎんこう",
     "romaji": "ginkou",
     "file": "audio/ginkou.mp3"
   },
   {
-    "text": "ギ",
+    "text": "ギター",
     "romaji": "gitaa",
     "file": "audio/gitaa.mp3"
   },
@@ -320,12 +320,12 @@
     "file": "audio/go.mp3"
   },
   {
-    "text": "ご",
+    "text": "ごはん",
     "romaji": "gohan",
     "file": "audio/gohan.mp3"
   },
   {
-    "text": "ゴ",
+    "text": "ゴール",
     "romaji": "gooru",
     "file": "audio/gooru.mp3"
   },
@@ -335,12 +335,12 @@
     "file": "audio/gu.mp3"
   },
   {
-    "text": "ぐ",
+    "text": "ぐあい",
     "romaji": "guai",
     "file": "audio/guai.mp3"
   },
   {
-    "text": "グ",
+    "text": "グラス",
     "romaji": "gurasu",
     "file": "audio/gurasu.mp3"
   },
@@ -350,12 +350,12 @@
     "file": "audio/gya.mp3"
   },
   {
-    "text": "ギャ",
+    "text": "ギャグ",
     "romaji": "gyagu",
     "file": "audio/gyagu.mp3"
   },
   {
-    "text": "ぎゃ",
+    "text": "ぎゃく",
     "romaji": "gyaku",
     "file": "audio/gyaku.mp3"
   },
@@ -365,12 +365,12 @@
     "file": "audio/gyo.mp3"
   },
   {
-    "text": "ぎょ",
+    "text": "ぎょかい",
     "romaji": "gyokai",
     "file": "audio/gyokai.mp3"
   },
   {
-    "text": "ギョ",
+    "text": "ギョーザ",
     "romaji": "gyooza",
     "file": "audio/gyooza.mp3"
   },
@@ -380,12 +380,12 @@
     "file": "audio/gyu.mp3"
   },
   {
-    "text": "ギュ",
+    "text": "ギュウドン",
     "romaji": "gyuudon",
     "file": "audio/gyuudon.mp3"
   },
   {
-    "text": "ぎゅ",
+    "text": "ぎゅうにゅう",
     "romaji": "gyuunyuu",
     "file": "audio/gyuunyuu.mp3"
   },
@@ -395,12 +395,12 @@
     "file": "audio/ha.mp3"
   },
   {
-    "text": "は",
+    "text": "はな",
     "romaji": "hana",
     "file": "audio/hana.mp3"
   },
   {
-    "text": "ハ",
+    "text": "ハンバーガー",
     "romaji": "hanbaagaa",
     "file": "audio/hanbaagaa.mp3"
   },
@@ -410,12 +410,12 @@
     "file": "audio/he.mp3"
   },
   {
-    "text": "ヘ",
+    "text": "ヘルメット",
     "romaji": "herumetto",
     "file": "audio/herumetto.mp3"
   },
   {
-    "text": "へ",
+    "text": "へや",
     "romaji": "heya",
     "file": "audio/heya.mp3"
   },
@@ -425,12 +425,12 @@
     "file": "audio/hi.mp3"
   },
   {
-    "text": "ヒ",
+    "text": "ヒーター",
     "romaji": "hiitaa",
     "file": "audio/hiitaa.mp3"
   },
   {
-    "text": "ひ",
+    "text": "ひと",
     "romaji": "hito",
     "file": "audio/hito.mp3"
   },
@@ -440,17 +440,17 @@
     "file": "audio/ho.mp3"
   },
   {
-    "text": "ん",
+    "text": "ほん",
     "romaji": "hon",
     "file": "audio/hon.mp3"
   },
   {
-    "text": "ほ",
+    "text": "ほし",
     "romaji": "hoshi",
     "file": "audio/hoshi.mp3"
   },
   {
-    "text": "ホ",
+    "text": "ホテル",
     "romaji": "hoteru",
     "file": "audio/hoteru.mp3"
   },
@@ -460,12 +460,12 @@
     "file": "audio/hya.mp3"
   },
   {
-    "text": "ヒャ",
+    "text": "ヒャッハー",
     "romaji": "hyahhaa",
     "file": "audio/hyahhaa.mp3"
   },
   {
-    "text": "ひゃ",
+    "text": "ひゃく",
     "romaji": "hyaku",
     "file": "audio/hyaku.mp3"
   },
@@ -475,7 +475,7 @@
     "file": "audio/hyo.mp3"
   },
   {
-    "text": "ひょ",
+    "text": "ひょう",
     "romaji": "hyou",
     "file": "audio/hyou.mp3"
   },
@@ -485,12 +485,12 @@
     "file": "audio/hyu.mp3"
   },
   {
-    "text": "ひゅ",
+    "text": "ひゅうひゅう",
     "romaji": "hyuhyu",
     "file": "audio/hyuhyu.mp3"
   },
   {
-    "text": "ヒュ",
+    "text": "ヒューマン",
     "romaji": "hyuuman",
     "file": "audio/hyuuman.mp3"
   },
@@ -500,12 +500,12 @@
     "file": "audio/i.mp3"
   },
   {
-    "text": "イ",
+    "text": "イベント",
     "romaji": "ibento",
     "file": "audio/ibento.mp3"
   },
   {
-    "text": "い",
+    "text": "いぬ",
     "romaji": "inu",
     "file": "audio/inu.mp3"
   },
@@ -515,12 +515,12 @@
     "file": "audio/ja.mp3"
   },
   {
-    "text": "じゃ",
+    "text": "じゃま",
     "romaji": "jama",
     "file": "audio/jama.mp3"
   },
   {
-    "text": "ジャ",
+    "text": "ジャズ",
     "romaji": "jazu",
     "file": "audio/jazu.mp3"
   },
@@ -530,17 +530,17 @@
     "file": "audio/ji.mp3"
   },
   {
-    "text": "ジ",
+    "text": "ジーンズ",
     "romaji": "jiinzu",
     "file": "audio/jiinzu.mp3"
   },
   {
-    "text": "ヂ",
+    "text": "ヂーゼル",
     "romaji": "jiizeru",
     "file": "audio/jiizeru.mp3"
   },
   {
-    "text": "じ",
+    "text": "じかん",
     "romaji": "jikan",
     "file": "audio/jikan.mp3"
   },
@@ -550,12 +550,12 @@
     "file": "audio/jo.mp3"
   },
   {
-    "text": "ジョ",
+    "text": "ジョギング",
     "romaji": "jogingu",
     "file": "audio/jogingu.mp3"
   },
   {
-    "text": "じょ",
+    "text": "じょせい",
     "romaji": "josei",
     "file": "audio/josei.mp3"
   },
@@ -565,12 +565,12 @@
     "file": "audio/ju.mp3"
   },
   {
-    "text": "じゅ",
+    "text": "じゅぎょう",
     "romaji": "jugyou",
     "file": "audio/jugyou.mp3"
   },
   {
-    "text": "ジュ",
+    "text": "ジュース",
     "romaji": "juusu",
     "file": "audio/juusu.mp3"
   },
@@ -580,12 +580,12 @@
     "file": "audio/ka.mp3"
   },
   {
-    "text": "カ",
+    "text": "カメラ",
     "romaji": "kamera",
     "file": "audio/kamera.mp3"
   },
   {
-    "text": "か",
+    "text": "かさ",
     "romaji": "kasa",
     "file": "audio/kasa.mp3"
   },
@@ -595,12 +595,12 @@
     "file": "audio/ke.mp3"
   },
   {
-    "text": "ケ",
+    "text": "ケーキ",
     "romaji": "keeki",
     "file": "audio/keeki.mp3"
   },
   {
-    "text": "け",
+    "text": "けむり",
     "romaji": "kemuri",
     "file": "audio/kemuri.mp3"
   },
@@ -610,12 +610,12 @@
     "file": "audio/ki.mp3"
   },
   {
-    "text": "キ",
+    "text": "キロ",
     "romaji": "kiro",
     "file": "audio/kiro.mp3"
   },
   {
-    "text": "き",
+    "text": "きって",
     "romaji": "kitte",
     "file": "audio/kitte.mp3"
   },
@@ -625,12 +625,12 @@
     "file": "audio/ko.mp3"
   },
   {
-    "text": "こ",
+    "text": "こども",
     "romaji": "kodomo",
     "file": "audio/kodomo.mp3"
   },
   {
-    "text": "コ",
+    "text": "コーヒー",
     "romaji": "koohii",
     "file": "audio/koohii.mp3"
   },
@@ -640,12 +640,12 @@
     "file": "audio/ku.mp3"
   },
   {
-    "text": "ク",
+    "text": "クラス",
     "romaji": "kurasu",
     "file": "audio/kurasu.mp3"
   },
   {
-    "text": "く",
+    "text": "くるま",
     "romaji": "kuruma",
     "file": "audio/kuruma.mp3"
   },
@@ -655,12 +655,12 @@
     "file": "audio/kya.mp3"
   },
   {
-    "text": "キャ",
+    "text": "キャベツ",
     "romaji": "kyabetsu",
     "file": "audio/kyabetsu.mp3"
   },
   {
-    "text": "きゃ",
+    "text": "きゃく",
     "romaji": "kyaku",
     "file": "audio/kyaku.mp3"
   },
@@ -670,12 +670,12 @@
     "file": "audio/kyo.mp3"
   },
   {
-    "text": "きょ",
+    "text": "きょう",
     "romaji": "kyou",
     "file": "audio/kyou.mp3"
   },
   {
-    "text": "キョ",
+    "text": "キョウト",
     "romaji": "kyouto",
     "file": "audio/kyouto.mp3"
   },
@@ -685,7 +685,7 @@
     "file": "audio/kyu.mp3"
   },
   {
-    "text": "きゅ",
+    "text": "きゅうり",
     "romaji": "kyuuri",
     "file": "audio/kyuuri.mp3"
   },
@@ -695,12 +695,12 @@
     "file": "audio/ma.mp3"
   },
   {
-    "text": "ま",
+    "text": "まど",
     "romaji": "mado",
     "file": "audio/mado.mp3"
   },
   {
-    "text": "マ",
+    "text": "マスク",
     "romaji": "masuku",
     "file": "audio/masuku.mp3"
   },
@@ -710,7 +710,7 @@
     "file": "audio/me.mp3"
   },
   {
-    "text": "メ",
+    "text": "メール",
     "romaji": "meeru",
     "file": "audio/meeru.mp3"
   },
@@ -720,12 +720,12 @@
     "file": "audio/mi.mp3"
   },
   {
-    "text": "ミ",
+    "text": "ミルク",
     "romaji": "miruku",
     "file": "audio/miruku.mp3"
   },
   {
-    "text": "み",
+    "text": "みず",
     "romaji": "mizu",
     "file": "audio/mizu.mp3"
   },
@@ -735,12 +735,12 @@
     "file": "audio/mo.mp3"
   },
   {
-    "text": "モ",
+    "text": "モデル",
     "romaji": "moderu",
     "file": "audio/moderu.mp3"
   },
   {
-    "text": "も",
+    "text": "もり",
     "romaji": "mori",
     "file": "audio/mori.mp3"
   },
@@ -750,12 +750,12 @@
     "file": "audio/mu.mp3"
   },
   {
-    "text": "む",
+    "text": "むし",
     "romaji": "mushi",
     "file": "audio/mushi.mp3"
   },
   {
-    "text": "ム",
+    "text": "ムービー",
     "romaji": "muubii",
     "file": "audio/muubii.mp3"
   },
@@ -765,12 +765,12 @@
     "file": "audio/mya.mp3"
   },
   {
-    "text": "みゃ",
+    "text": "みゃく",
     "romaji": "myaku",
     "file": "audio/myaku.mp3"
   },
   {
-    "text": "ミャ",
+    "text": "ミャンマー",
     "romaji": "myanmaa",
     "file": "audio/myanmaa.mp3"
   },
@@ -780,12 +780,12 @@
     "file": "audio/myo.mp3"
   },
   {
-    "text": "ミョ",
+    "text": "ミョウガ",
     "romaji": "myouga",
     "file": "audio/myouga.mp3"
   },
   {
-    "text": "みょ",
+    "text": "みょうじ",
     "romaji": "myouji",
     "file": "audio/myouji.mp3"
   },
@@ -795,7 +795,7 @@
     "file": "audio/myu.mp3"
   },
   {
-    "text": "みゅ",
+    "text": "みゅーじっく",
     "romaji": "myuujikku",
     "file": "audio/myuujikku.mp3"
   },
@@ -810,12 +810,12 @@
     "file": "audio/na.mp3"
   },
   {
-    "text": "ナ",
+    "text": "ナイフ",
     "romaji": "naifu",
     "file": "audio/naifu.mp3"
   },
   {
-    "text": "な",
+    "text": "なつ",
     "romaji": "natsu",
     "file": "audio/natsu.mp3"
   },
@@ -825,12 +825,12 @@
     "file": "audio/ne.mp3"
   },
   {
-    "text": "ね",
+    "text": "ねこ",
     "romaji": "neko",
     "file": "audio/neko.mp3"
   },
   {
-    "text": "ネ",
+    "text": "ネクタイ",
     "romaji": "nekutai",
     "file": "audio/nekutai.mp3"
   },
@@ -840,12 +840,12 @@
     "file": "audio/ni.mp3"
   },
   {
-    "text": "に",
+    "text": "にく",
     "romaji": "niku",
     "file": "audio/niku.mp3"
   },
   {
-    "text": "ン",
+    "text": "ンジャメナ",
     "romaji": "njamena",
     "file": "audio/njamena.mp3"
   },
@@ -855,12 +855,12 @@
     "file": "audio/no.mp3"
   },
   {
-    "text": "の",
+    "text": "のみもの",
     "romaji": "nomimono",
     "file": "audio/nomimono.mp3"
   },
   {
-    "text": "ノ",
+    "text": "ノート",
     "romaji": "nooto",
     "file": "audio/nooto.mp3"
   },
@@ -870,12 +870,12 @@
     "file": "audio/nu.mp3"
   },
   {
-    "text": "ぬ",
+    "text": "ぬの",
     "romaji": "nuno",
     "file": "audio/nuno.mp3"
   },
   {
-    "text": "ヌ",
+    "text": "ヌードル",
     "romaji": "nuudoru",
     "file": "audio/nuudoru.mp3"
   },
@@ -885,7 +885,7 @@
     "file": "audio/nya.mp3"
   },
   {
-    "text": "にゃ",
+    "text": "にゃんこ",
     "romaji": "nyanko",
     "file": "audio/nyanko.mp3"
   },
@@ -895,12 +895,12 @@
     "file": "audio/nyo.mp3"
   },
   {
-    "text": "ニョ",
+    "text": "ニョッキ",
     "romaji": "nyokki",
     "file": "audio/nyokki.mp3"
   },
   {
-    "text": "にょ",
+    "text": "にょうぼう",
     "romaji": "nyoubou",
     "file": "audio/nyoubou.mp3"
   },
@@ -910,12 +910,12 @@
     "file": "audio/nyu.mp3"
   },
   {
-    "text": "にゅ",
+    "text": "にゅうがく",
     "romaji": "nyuugaku",
     "file": "audio/nyuugaku.mp3"
   },
   {
-    "text": "ニ",
+    "text": "ニュース",
     "romaji": "nyuusu",
     "file": "audio/nyuusu.mp3"
   },
@@ -925,12 +925,12 @@
     "file": "audio/o.mp3"
   },
   {
-    "text": "お",
+    "text": "おちゃ",
     "romaji": "ocha",
     "file": "audio/ocha.mp3"
   },
   {
-    "text": "オ",
+    "text": "オレンジ",
     "romaji": "orenji",
     "file": "audio/orenji.mp3"
   },
@@ -940,7 +940,7 @@
     "file": "audio/pa.mp3"
   },
   {
-    "text": "ぱ",
+    "text": "ぱん",
     "romaji": "pan",
     "file": "audio/pan.mp3"
   },
@@ -950,7 +950,7 @@
     "file": "audio/pe.mp3"
   },
   {
-    "text": "ぺ",
+    "text": "ぺん",
     "romaji": "pen",
     "file": "audio/pen.mp3"
   },
@@ -960,7 +960,7 @@
     "file": "audio/pi.mp3"
   },
   {
-    "text": "ぴ",
+    "text": "ぴあの",
     "romaji": "piano",
     "file": "audio/piano.mp3"
   },
@@ -970,12 +970,12 @@
     "file": "audio/po.mp3"
   },
   {
-    "text": "ポ",
+    "text": "ポケット",
     "romaji": "poketto",
     "file": "audio/poketto.mp3"
   },
   {
-    "text": "ぽ",
+    "text": "ぽすと",
     "romaji": "posuto",
     "file": "audio/posuto.mp3"
   },
@@ -985,12 +985,12 @@
     "file": "audio/pu.mp3"
   },
   {
-    "text": "ぷ",
+    "text": "ぷりん",
     "romaji": "purin",
     "file": "audio/purin.mp3"
   },
   {
-    "text": "プ",
+    "text": "プール",
     "romaji": "puuru",
     "file": "audio/puuru.mp3"
   },
@@ -1000,7 +1000,7 @@
     "file": "audio/pya.mp3"
   },
   {
-    "text": "ぴゃ",
+    "text": "ぴゃっと",
     "romaji": "pyatto",
     "file": "audio/pyatto.mp3"
   },
@@ -1010,7 +1010,7 @@
     "file": "audio/pyo.mp3"
   },
   {
-    "text": "ぴょ",
+    "text": "ぴょん",
     "romaji": "pyon",
     "file": "audio/pyon.mp3"
   },
@@ -1020,12 +1020,12 @@
     "file": "audio/pyu.mp3"
   },
   {
-    "text": "ピュ",
+    "text": "ピュア",
     "romaji": "pyua",
     "file": "audio/pyua.mp3"
   },
   {
-    "text": "ぴゅ",
+    "text": "ぴゅうぴゅう",
     "romaji": "pyuupyu",
     "file": "audio/pyuupyu.mp3"
   },
@@ -1035,12 +1035,12 @@
     "file": "audio/ra.mp3"
   },
   {
-    "text": "ら",
+    "text": "らいねん",
     "romaji": "rainen",
     "file": "audio/rainen.mp3"
   },
   {
-    "text": "ラ",
+    "text": "ラジオ",
     "romaji": "rajio",
     "file": "audio/rajio.mp3"
   },
@@ -1050,12 +1050,12 @@
     "file": "audio/re.mp3"
   },
   {
-    "text": "れ",
+    "text": "れきし",
     "romaji": "rekishi",
     "file": "audio/rekishi.mp3"
   },
   {
-    "text": "レ",
+    "text": "レストラン",
     "romaji": "resutoran",
     "file": "audio/resutoran.mp3"
   },
@@ -1065,12 +1065,12 @@
     "file": "audio/ri.mp3"
   },
   {
-    "text": "リ",
+    "text": "リモコン",
     "romaji": "rimokon",
     "file": "audio/rimokon.mp3"
   },
   {
-    "text": "り",
+    "text": "りんご",
     "romaji": "ringo",
     "file": "audio/ringo.mp3"
   },
@@ -1080,12 +1080,12 @@
     "file": "audio/ro.mp3"
   },
   {
-    "text": "ロ",
+    "text": "ロボット",
     "romaji": "robotto",
     "file": "audio/robotto.mp3"
   },
   {
-    "text": "ろ",
+    "text": "ろく",
     "romaji": "roku",
     "file": "audio/roku.mp3"
   },
@@ -1095,12 +1095,12 @@
     "file": "audio/ru.mp3"
   },
   {
-    "text": "る",
+    "text": "るす",
     "romaji": "rusu",
     "file": "audio/rusu.mp3"
   },
   {
-    "text": "ル",
+    "text": "ルール",
     "romaji": "ruuru",
     "file": "audio/ruuru.mp3"
   },
@@ -1110,12 +1110,12 @@
     "file": "audio/rya.mp3"
   },
   {
-    "text": "りゃ",
+    "text": "りゃく",
     "romaji": "ryaku",
     "file": "audio/ryaku.mp3"
   },
   {
-    "text": "リャ",
+    "text": "リャマ",
     "romaji": "ryama",
     "file": "audio/ryama.mp3"
   },
@@ -1125,12 +1125,12 @@
     "file": "audio/ryo.mp3"
   },
   {
-    "text": "りょ",
+    "text": "りょこう",
     "romaji": "ryokou",
     "file": "audio/ryokou.mp3"
   },
   {
-    "text": "リョ",
+    "text": "リョウリ",
     "romaji": "ryouri",
     "file": "audio/ryouri.mp3"
   },
@@ -1140,12 +1140,12 @@
     "file": "audio/ryu.mp3"
   },
   {
-    "text": "リュ",
+    "text": "リュック",
     "romaji": "ryukku",
     "file": "audio/ryukku.mp3"
   },
   {
-    "text": "りゅ",
+    "text": "りゅう",
     "romaji": "ryuu",
     "file": "audio/ryuu.mp3"
   },
@@ -1155,12 +1155,12 @@
     "file": "audio/sa.mp3"
   },
   {
-    "text": "さ",
+    "text": "さかな",
     "romaji": "sakana",
     "file": "audio/sakana.mp3"
   },
   {
-    "text": "サ",
+    "text": "サラダ",
     "romaji": "sarada",
     "file": "audio/sarada.mp3"
   },
@@ -1170,12 +1170,12 @@
     "file": "audio/se.mp3"
   },
   {
-    "text": "セ",
+    "text": "セーター",
     "romaji": "seetaa",
     "file": "audio/seetaa.mp3"
   },
   {
-    "text": "せ",
+    "text": "せんせい",
     "romaji": "sensei",
     "file": "audio/sensei.mp3"
   },
@@ -1185,17 +1185,17 @@
     "file": "audio/sha.mp3"
   },
   {
-    "text": "しゃ",
+    "text": "しゃしん",
     "romaji": "shashin",
     "file": "audio/shashin.mp3"
   },
   {
-    "text": "シ",
+    "text": "シャツ",
     "romaji": "shatsu",
     "file": "audio/shatsu.mp3"
   },
   {
-    "text": "シャ",
+    "text": "シャワー",
     "romaji": "shawaa",
     "file": "audio/shawaa.mp3"
   },
@@ -1205,7 +1205,7 @@
     "file": "audio/shi.mp3"
   },
   {
-    "text": "し",
+    "text": "しお",
     "romaji": "shio",
     "file": "audio/shio.mp3"
   },
@@ -1215,12 +1215,12 @@
     "file": "audio/sho.mp3"
   },
   {
-    "text": "しょ",
+    "text": "しょくどう",
     "romaji": "shokudou",
     "file": "audio/shokudou.mp3"
   },
   {
-    "text": "ショ",
+    "text": "ショー",
     "romaji": "shoo",
     "file": "audio/shoo.mp3"
   },
@@ -1230,12 +1230,12 @@
     "file": "audio/shu.mp3"
   },
   {
-    "text": "しゅ",
+    "text": "しゅくだい",
     "romaji": "shukudai",
     "file": "audio/shukudai.mp3"
   },
   {
-    "text": "シュ",
+    "text": "シュート",
     "romaji": "shuuto",
     "file": "audio/shuuto.mp3"
   },
@@ -1245,12 +1245,12 @@
     "file": "audio/so.mp3"
   },
   {
-    "text": "ソ",
+    "text": "ソファ",
     "romaji": "sofa",
     "file": "audio/sofa.mp3"
   },
   {
-    "text": "そ",
+    "text": "そら",
     "romaji": "sora",
     "file": "audio/sora.mp3"
   },
@@ -1260,12 +1260,12 @@
     "file": "audio/su.mp3"
   },
   {
-    "text": "す",
+    "text": "すし",
     "romaji": "sushi",
     "file": "audio/sushi.mp3"
   },
   {
-    "text": "ス",
+    "text": "スープ",
     "romaji": "suupu",
     "file": "audio/suupu.mp3"
   },
@@ -1275,12 +1275,12 @@
     "file": "audio/ta.mp3"
   },
   {
-    "text": "タ",
+    "text": "タクシー",
     "romaji": "takushii",
     "file": "audio/takushii.mp3"
   },
   {
-    "text": "た",
+    "text": "たまご",
     "romaji": "tamago",
     "file": "audio/tamago.mp3"
   },
@@ -1290,12 +1290,12 @@
     "file": "audio/te.mp3"
   },
   {
-    "text": "て",
+    "text": "てがみ",
     "romaji": "tegami",
     "file": "audio/tegami.mp3"
   },
   {
-    "text": "テ",
+    "text": "テレビ",
     "romaji": "terebi",
     "file": "audio/terebi.mp3"
   },
@@ -1305,12 +1305,12 @@
     "file": "audio/to.mp3"
   },
   {
-    "text": "と",
+    "text": "とけい",
     "romaji": "tokei",
     "file": "audio/tokei.mp3"
   },
   {
-    "text": "ト",
+    "text": "トマト",
     "romaji": "tomato",
     "file": "audio/tomato.mp3"
   },
@@ -1320,17 +1320,17 @@
     "file": "audio/tsu.mp3"
   },
   {
-    "text": "ツ",
+    "text": "ツアー",
     "romaji": "tsuaa",
     "file": "audio/tsuaa.mp3"
   },
   {
-    "text": "つ",
+    "text": "つくえ",
     "romaji": "tsukue",
     "file": "audio/tsukue.mp3"
   },
   {
-    "text": "づ",
+    "text": "つづく",
     "romaji": "tsuzuku",
     "file": "audio/tsuzuku.mp3"
   },
@@ -1340,12 +1340,12 @@
     "file": "audio/u.mp3"
   },
   {
-    "text": "ウ",
+    "text": "ウイスキー",
     "romaji": "uisukii",
     "file": "audio/uisukii.mp3"
   },
   {
-    "text": "う",
+    "text": "うみ",
     "romaji": "umi",
     "file": "audio/umi.mp3"
   },
@@ -1355,12 +1355,12 @@
     "file": "audio/wa.mp3"
   },
   {
-    "text": "ワ",
+    "text": "ワイン",
     "romaji": "wain",
     "file": "audio/wain.mp3"
   },
   {
-    "text": "わ",
+    "text": "わたし",
     "romaji": "watashi",
     "file": "audio/watashi.mp3"
   },
@@ -1370,7 +1370,7 @@
     "file": "audio/wo.mp3"
   },
   {
-    "text": "ヲ",
+    "text": "ヲタク",
     "romaji": "wotaku",
     "file": "audio/wotaku.mp3"
   },
@@ -1380,12 +1380,12 @@
     "file": "audio/ya.mp3"
   },
   {
-    "text": "や",
+    "text": "やま",
     "romaji": "yama",
     "file": "audio/yama.mp3"
   },
   {
-    "text": "ヤ",
+    "text": "ヤンキー",
     "romaji": "yankii",
     "file": "audio/yankii.mp3"
   },
@@ -1395,12 +1395,12 @@
     "file": "audio/yo.mp3"
   },
   {
-    "text": "ヨ",
+    "text": "ヨーグルト",
     "romaji": "yooguruto",
     "file": "audio/yooguruto.mp3"
   },
   {
-    "text": "よ",
+    "text": "よる",
     "romaji": "yoru",
     "file": "audio/yoru.mp3"
   },
@@ -1410,12 +1410,12 @@
     "file": "audio/yu.mp3"
   },
   {
-    "text": "ゆ",
+    "text": "ゆき",
     "romaji": "yuki",
     "file": "audio/yuki.mp3"
   },
   {
-    "text": "ユ",
+    "text": "ユーモア",
     "romaji": "yuumoa",
     "file": "audio/yuumoa.mp3"
   },
@@ -1425,12 +1425,12 @@
     "file": "audio/za.mp3"
   },
   {
-    "text": "ザ",
+    "text": "ザーザー",
     "romaji": "zaazaa",
     "file": "audio/zaazaa.mp3"
   },
   {
-    "text": "ざ",
+    "text": "ざっし",
     "romaji": "zasshi",
     "file": "audio/zasshi.mp3"
   },
@@ -1440,12 +1440,12 @@
     "file": "audio/ze.mp3"
   },
   {
-    "text": "ぜ",
+    "text": "ぜんぶ",
     "romaji": "zenbu",
     "file": "audio/zenbu.mp3"
   },
   {
-    "text": "ゼ",
+    "text": "ゼリー",
     "romaji": "zerii",
     "file": "audio/zerii.mp3"
   },
@@ -1455,12 +1455,12 @@
     "file": "audio/zo.mp3"
   },
   {
-    "text": "ゾ",
+    "text": "ゾーン",
     "romaji": "zoon",
     "file": "audio/zoon.mp3"
   },
   {
-    "text": "ぞ",
+    "text": "ぞう",
     "romaji": "zou",
     "file": "audio/zou.mp3"
   },
@@ -1470,17 +1470,17 @@
     "file": "audio/zu.mp3"
   },
   {
-    "text": "ず",
+    "text": "ずかん",
     "romaji": "zukan",
     "file": "audio/zukan.mp3"
   },
   {
-    "text": "ヅ",
+    "text": "ヅラ",
     "romaji": "zura",
     "file": "audio/zura.mp3"
   },
   {
-    "text": "ズ",
+    "text": "ズーム",
     "romaji": "zuumu",
     "file": "audio/zuumu.mp3"
   }
