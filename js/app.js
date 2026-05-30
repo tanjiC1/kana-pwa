@@ -1,13 +1,13 @@
 const rand=a=>a[Math.floor(Math.random()*a.length)];
 function getPraise(s){if(s>=10)return rand(PRAISE.t4);if(s>=5)return rand(PRAISE.t3);if(s>=3)return rand(PRAISE.t2);return rand(PRAISE.t1);}
 let sets={sei:true,daku:false,you:false}, scripts={hira:true,kata:false}, mode="choose", pickMode="uniform";
-let autoSpeak=true, slow=false, theme="sakura", jaVoice=null;
+let autoSpeak=true, slow=false, speakAfter=false, theme="sakura", jaVoice=null;
 let C=0,W=0,streak=0,best=0,miss={},lvl={},cur=null,locked=false;
 const $=id=>document.getElementById(id);
 const root=document.documentElement;
 const SAVE="kanaSave_v2";
-function save(){try{localStorage.setItem(SAVE,JSON.stringify({C,W,best,miss,lvl,sets,scripts,mode,pickMode,autoSpeak,slow,theme}));}catch(e){}}
-function load(){try{const d=JSON.parse(localStorage.getItem(SAVE));if(!d)return;C=d.C||0;W=d.W||0;best=d.best||0;miss=d.miss||{};lvl=d.lvl||{};if(d.sets)sets=d.sets;if(d.scripts)scripts=d.scripts;if(d.mode)mode=d.mode;if(d.pickMode)pickMode=d.pickMode;autoSpeak=d.autoSpeak!==false;slow=!!d.slow;theme=d.theme||"sakura";}catch(e){}}
+function save(){try{localStorage.setItem(SAVE,JSON.stringify({C,W,best,miss,lvl,sets,scripts,mode,pickMode,autoSpeak,slow,speakAfter,theme}));}catch(e){}}
+function load(){try{const d=JSON.parse(localStorage.getItem(SAVE));if(!d)return;C=d.C||0;W=d.W||0;best=d.best||0;miss=d.miss||{};lvl=d.lvl||{};if(d.sets)sets=d.sets;if(d.scripts)scripts=d.scripts;if(d.mode)mode=d.mode;if(d.pickMode)pickMode=d.pickMode;autoSpeak=d.autoSpeak!==false;slow=!!d.slow;speakAfter=!!d.speakAfter;theme=d.theme||"sakura";}catch(e){}}
 function loadVoices(){try{const vs=speechSynthesis.getVoices();jaVoice=vs.find(v=>/ja[-_]/i.test(v.lang))||vs.find(v=>/ja/i.test(v.lang))||null;}catch(e){}}
 if('speechSynthesis' in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices;}
 let currentAudio=null;
@@ -49,7 +49,7 @@ function judge(ok,el,kind){locked=true;const card=$("card");
     const pr=$("praise");pr.textContent=rand(COMFORT);pr.className="praise show";
     if(el){el.classList.add("bad");document.querySelectorAll(".opt").forEach(o=>{if((kind==="k"&&o.dataset.k===cur[0])||(kind==="r"&&o.dataset.r===cur[1]))o.classList.add("good");});}}
   {const _e=EX[cur[0]];$("ex").innerHTML=_e?'例：<button class="ex-sound" type="button" title="听例词" aria-label="听例词">🔊</button><b>'+_e[0]+'</b> '+_e[1]+'　'+_e[2]:'';}
-  upd();save();$("next").style.display="block";if(autoSpeak)speakExample();}
+  upd();save();$("next").style.display="block";if(speakAfter)speak(cur[0]);}
 function upd(){$("sC").textContent=C;$("sW").textContent=W;$("sS").textContent=streak;const tot=C+W;$("sR").textContent=tot?Math.round(C/tot*100)+"%":"—";$("subline").textContent="🔥 最高连击 "+best+" · 累计 "+tot+" 题";const g=graduation(allFor());$("gradline").textContent="已掌握 "+g.done+" / 当前题库 "+g.total;
   const arr=Object.entries(miss).sort((a,b)=>b[1]-a[1]).slice(0,12);$("missed").innerHTML=arr.length?"最常错："+arr.map(([k,v])=>`<span class=miss-tag>${k.split(" ")[0]} ×${v}</span>`).join(""):"";}
 function syncUI(){document.querySelectorAll("#themes .chip").forEach(c=>c.classList.toggle("on",c.dataset.t===theme));
@@ -58,6 +58,7 @@ function syncUI(){document.querySelectorAll("#themes .chip").forEach(c=>c.classL
   document.querySelectorAll("#modes .chip").forEach(c=>c.classList.toggle("on",c.dataset.mode===mode));
   document.querySelector('#voice .chip[data-v=auto]').classList.toggle("on",autoSpeak);
   document.querySelector('#voice .chip[data-v=slow]').classList.toggle("on",slow);
+  document.querySelector('#voice .chip[data-v=after]').classList.toggle("on",speakAfter);
   document.querySelectorAll("#pickModes .chip").forEach(c=>c.classList.toggle("on",c.dataset.pick===pickMode));}
 document.querySelectorAll("#themes .chip").forEach(c=>c.onclick=()=>{theme=c.dataset.t;applyTheme();syncUI();save();});
 document.querySelectorAll("#sets .chip").forEach(c=>c.onclick=()=>{sets[c.dataset.set]=!sets[c.dataset.set];if(!Object.values(sets).some(Boolean))sets[c.dataset.set]=true;syncUI();save();pick();});
@@ -66,7 +67,7 @@ document.querySelectorAll("#modes .chip").forEach(c=>c.onclick=()=>{mode=c.datas
 document.querySelectorAll("#pickModes .chip").forEach(c=>c.onclick=()=>{pickMode=c.dataset.pick;syncUI();save();pick();});
 $("spk").onclick=()=>{loadVoices();const ok=cur&&speak(cur[0]);if(ok===false){$("fb").textContent="此浏览器不支持发音，请改用 Chrome 打开";$("fb").className="fb bad";}};
 $("ex").onclick=e=>{if(e.target&&e.target.closest(".ex-sound,b"))speakExample();};
-document.querySelectorAll("#voice .chip").forEach(c=>c.onclick=()=>{if(c.dataset.v==="auto")autoSpeak=!autoSpeak;else slow=!slow;syncUI();save();});
+document.querySelectorAll("#voice .chip").forEach(c=>c.onclick=()=>{if(c.dataset.v==="auto")autoSpeak=!autoSpeak;else if(c.dataset.v==="slow")slow=!slow;else speakAfter=!speakAfter;syncUI();save();});
 $("reset").onclick=()=>{if(confirm("清空正确/错误/最常错/掌握度记录？（最高连击与设置保留）")){C=W=streak=0;miss={};lvl={};upd();save();}};
 $("next").onclick=()=>pick();
 document.addEventListener("keydown",e=>{if(e.target&&e.target.id==="inp")return;if((e.key==="Enter"||e.key===" ")&&$("next").style.display==="block"){e.preventDefault();pick();}});

@@ -2,11 +2,16 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans JP",sans-serif;background:radial-gradient(1200px 700px at 50% -8%,var(--bg1),var(--bg2));color:var(--ink);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:18px 14px 60px;transition:background .4s,color .4s;overflow-x:hidden}
 h1{font-size:21px;margin:6px 0 2px;position:relative;z-index:2}.sub{color:var(--muted);font-size:12px;margin-bottom:14px;position:relative;z-index:2}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);width:100%;max-width:470px;padding:18px;position:relative;z-index:2;transition:background .4s,border-color .4s}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);width:100%;max-width:920px;padding:18px;position:relative;z-index:2;transition:background .4s,border-color .4s}
+.layout{display:flex;gap:22px;align-items:flex-start;max-width:920px;margin:0 auto}
+.settings{flex:0 0 250px}
+.quiz{flex:1;min-width:0}
 .lbl{font-size:12px;color:var(--muted);width:100%;margin-top:8px;letter-spacing:.3px}
-.row{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
-.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;user-select:none;transition:.15s}
+.settings .lbl{margin-top:12px}
+.row{display:flex;flex-wrap:wrap;margin:6px 0}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:8px 14px;margin:5px 6px 0 0;font-size:13px;cursor:pointer;user-select:none;transition:.15s}
 .chip.on{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:7px;vertical-align:-1px;border:1px solid rgba(0,0,0,.1)}
 .stats{display:flex;gap:6px;margin:14px 0 4px;text-align:center}
 .stat{flex:1;background:var(--chip);border:1px solid var(--line);border-radius:13px;padding:9px 4px;transition:.15s}
 .stat b{display:block;font-size:19px}.stat span{font-size:10px;color:var(--muted)}
@@ -38,8 +43,13 @@ input.ans:focus{border-color:var(--accent)}
 .btn.sec{background:var(--chip);color:var(--ink);border:1px solid var(--line)}
 .missed{margin-top:14px;font-size:12px;color:var(--muted)}
 .miss-tag{display:inline-block;background:var(--card);color:var(--bad);border:1px solid var(--line);border-radius:8px;padding:4px 9px;margin:4px 4px 0 0;font-size:16px;font-family:"Noto Sans JP",sans-serif}
-.foot{margin-top:18px;font-size:11px;color:var(--muted);text-align:center;max-width:470px;line-height:1.7;position:relative;z-index:2}
+.foot{margin-top:18px;font-size:11px;color:var(--muted);text-align:center;max-width:920px;line-height:1.7;position:relative;z-index:2}
 .petal{position:fixed;top:-32px;will-change:transform;animation:fall linear infinite;opacity:.45;z-index:0;pointer-events:none;user-select:none}
 @keyframes fall{0%{transform:translateY(-32px) rotate(0)}100%{transform:translateY(106vh) rotate(380deg)}}
 .spark{position:fixed;z-index:30;pointer-events:none;font-size:18px;animation:spark .85s ease-out forwards}
 @keyframes spark{0%{transform:translate(-50%,-50%) scale(.5);opacity:1}100%{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.2);opacity:0}}
+
+@media(max-width:760px){
+.layout{flex-direction:column;gap:14px}
+.settings{flex:none;width:100%}
+}
